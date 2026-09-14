@@ -1,14 +1,595 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agrodrones | Agricultura de Precisão e Serviços de Terraplanagem</title>
-    <script type="module" crossorigin src="/assets/index-9q15-fZo.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Dq26RTAe.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrodrones | Agricultura de Precisão e Serviços de Terraplanagem</title>
+  <meta name="description" content="Especialistas em pulverização agrícola com Drone DJI T40, serviços pesados de escavadeira hidráulica New Holland, terraplanagem e imagens aéreas em Codó - MA e região." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/logo_new.png" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header glass-header">
+    <div class="container">
+      <a href="#" class="brand-logo-wrap" title="Agrodrones Início">
+        <img src="/images/logo_new.png" alt="Agrodrones Logo" class="brand-logo" />
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Projetos</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5599981300824" target="_blank" rel="noopener noreferrer" class="btn-contact-top">
+          <i class="fa-brands fa-whatsapp text-gold"></i>
+          <span>(99) 98130-0824</span>
+        </a>
+        <a href="#orcamento" class="btn-primary">
+          <span>Solicitar Orçamento</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="inicio">
+    <!-- Slide 1: DJI T40 -->
+    <div class="hero-slide active" style="background-image: url('/images/20240316_101322.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Slide 2: Escavadeira New Holland -->
+    <div class="hero-slide" style="background-image: url('/images/20250728_160729.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Slide 3: Operação no Campo -->
+    <div class="hero-slide" style="background-image: url('/images/20240316_101525.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fa-solid fa-seedling"></i> Tecnologia de Ponta no Campo
+        </div>
+        <h1 class="hero-title">
+          Produza mais em menos tempo com a <span>Agrodrones</span>
+        </h1>
+        <p class="hero-subtitle">
+          Soluções completas em Agricultura de Precisão com drone DJI T40 e serviços robustos de terraplanagem com Escavadeira Hidráulica New Holland E215C em Codó - MA e todo o estado.
+        </p>
+        <div class="hero-buttons">
+          <a href="#orcamento" class="btn-primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Orçamento Rápido</span>
+          </a>
+          <a href="#servicos" class="btn-outline">
+            <span>Conhecer Nossos Serviços</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-controls">
+      <button class="hero-ctrl-btn" id="heroPrev" aria-label="Anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="hero-ctrl-btn" id="heroNext" aria-label="Próximo">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Compliance Strip -->
+  <div class="compliance-strip">
+    <div class="container">
+      <div class="compliance-grid">
+        <div class="comp-item">
+          <i class="fa-solid fa-shield-halved fa-2x" style="color: var(--gold-primary); margin-bottom: 8px;"></i>
+          <h4>Empresa Regulamentada</h4>
+          <p>Operações registradas e homologadas na ANAC e ANATEL</p>
+        </div>
+        <div class="comp-item">
+          <i class="fa-solid fa-certificate fa-2x" style="color: var(--gold-primary); margin-bottom: 8px;"></i>
+          <h4>Pilotos Certificados</h4>
+          <p>Habilitação CHT, MAPA e Especialização CAAR</p>
+        </div>
+        <div class="comp-item">
+          <i class="fa-solid fa-file-contract fa-2x" style="color: var(--gold-primary); margin-bottom: 8px;"></i>
+          <h4>Seguro RETA Obrigatório</h4>
+          <p>Total segurança e cobertura de responsabilidade civil</p>
+        </div>
+        <div class="comp-item">
+          <i class="fa-solid fa-tractor fa-2x" style="color: var(--gold-primary); margin-bottom: 8px;"></i>
+          <h4>Frota de Alta Performance</h4>
+          <p>Equipamentos de padrão mundial DJI e New Holland</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-logo-card">
+          <img src="/images/logo_new.png" alt="Logotipo Oficial Agrodrones" class="about-logo-img" />
+          <div class="company-meta-pills">
+            <div class="meta-pill"><i class="fa-solid fa-id-card"></i> CNPJ: 13.533.233/0001-00</div>
+            <div class="meta-pill"><i class="fa-solid fa-user-tie"></i> JAC DE OLIVEIRA</div>
+            <div class="meta-pill"><i class="fa-solid fa-location-dot"></i> Codó - Maranhão</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Quem Somos</span>
+          <h2 class="section-title">Inovação e eficiência a serviço do agronegócio e da construção</h2>
+          <p>
+            A <strong>Agrodrones</strong> é referência regional em serviços de agricultura de precisão e terraplanagem. Nosso compromisso é levar ao produtor rural e às empresas de infraestrutura a tecnologia mais moderna do mercado.
+          </p>
+          <p>
+            Com equipamentos de última geração — como os drones agrícolas <strong>DJI T40</strong> e escavadeiras hidráulicas <strong>New Holland E215C</strong> —, garantimos máxima rentabilidade na sua lavoura, zero amassamento da plantação, economia drástica de água e produtos, e execuções de terraplanagem com precisão milimétrica.
+          </p>
+
+          <div class="diff-cards-grid">
+            <div class="diff-card">
+              <h4>Zero Amassamento</h4>
+              <p>Aplicação aérea sem perda de plantas na lavoura, aumentando a produtividade por hectare.</p>
+            </div>
+            <div class="diff-card">
+              <h4>Alta Precisão</h4>
+              <p>Controle milimétrico em terraplanagem, açudes e dispersão homogênea de insumos.</p>
+            </div>
+            <div class="diff-card">
+              <h4>Economia Real</h4>
+              <p>Redução no consumo de água, defensivos e combustível nas operações rurais.</p>
+            </div>
+            <div class="diff-card">
+              <h4>Agilidade Total</h4>
+              <p>Cobertura de grandes extensões de terra em tempo recorde, mesmo em áreas de difícil acesso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services-section" id="servicos">
+    <div class="container">
+      <div class="center-text">
+        <span class="section-tag">Nossas Soluções</span>
+        <h2 class="section-title">Serviços Especializados para o Campo e Obras</h2>
+        <p class="section-desc">
+          Combinamos a força do maquinário pesado com a precisão dos drones para atender todas as fases do seu projeto com máxima eficiência.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Card 1: Drones Agrícolas -->
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="/images/20240316_101540.jpg" alt="Drone de Pulverização Agrícola DJI T40" />
+          </div>
+          <div class="service-body">
+            <h3>Drones Agrícolas de Pulverização</h3>
+            <p>Manejo inteligente e sustentável da sua plantação com tecnologia de vazão controlada e bicos centrífugos.</p>
+            <ul class="service-features">
+              <li>Aplicação de herbicidas, fungicidas e inseticidas</li>
+              <li>Distribuição uniforme de adubos e fertilizantes</li>
+              <li>Dispersão de sementes e ressemeio de pastagens</li>
+              <li>Nutrição foliar com máxima absorção</li>
+              <li>Sem amassamento da cultura e sem compactação do solo</li>
+            </ul>
+            <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Escavadeira Hidráulica -->
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="/images/20250728_160732.jpg" alt="Escavadeira Hidráulica New Holland E215C" />
+          </div>
+          <div class="service-body">
+            <h3>Escavadeira Hidráulica & Terraplanagem</h3>
+            <p>Potência, robustez e controle milimétrico para obras rurais, industriais, estradas e platôs.</p>
+            <ul class="service-features">
+              <li>Construção e limpeza de açudes e represas</li>
+              <li>Terraplenagem, cortes, aterros e nivelamento</li>
+              <li>Abertura de valas, drenagens e assentamento de tubos</li>
+              <li>Limpeza de terrenos e desmatamento controlado</li>
+              <li>Carregamento ágil de caminhões e bueiros</li>
+            </ul>
+            <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Imagens Aéreas & Topografia -->
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="/images/evento_rural_dia.jpg" alt="Imagens Aéreas e Mapeamento" />
+          </div>
+          <div class="service-body">
+            <h3>Imagens Aéreas & Mapeamento</h3>
+            <p>Visão privilegiada em altíssima definição para planejar, monitorar e valorizar suas áreas e eventos.</p>
+            <ul class="service-features">
+              <li>Mapeamento aéreo, ortomosaicos e modelos 3D</li>
+              <li>Inspeção de falhas de plantio e estresse hídrico</li>
+              <li>Acompanhamento periódico de obras e propriedades</li>
+              <li>Cobertura de eventos rurais, feiras e publicidade</li>
+              <li>Fotos e vídeos profissionais em 4K</li>
+            </ul>
+            <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery-section" id="galeria">
+    <div class="container">
+      <div class="center-text">
+        <span class="section-tag">Galeria Real</span>
+        <h2 class="section-title">Nossos Trabalhos no Campo</h2>
+        <p class="section-desc">
+          Confira registros autênticos das nossas operações diárias em lavouras, propriedades e obras pela região.
+        </p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">Todos os Projetos</button>
+        <button class="filter-btn" data-filter="drone">Drones Agrícolas</button>
+        <button class="filter-btn" data-filter="escavadeira">Escavadeira & Terraplanagem</button>
+        <button class="filter-btn" data-filter="aerea">Imagens Aéreas</button>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/20240316_101322.jpg" alt="DJI T40 pronto para pulverização" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Drone DJI T40 em Operação</h4>
+            <span>Pulverização em Lavoura</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="escavadeira">
+          <img src="/images/20250728_160729.jpg" alt="Escavadeira New Holland E215C" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>New Holland E215C</h4>
+            <span>Terraplanagem e Obras</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/20240316_101448.jpg" alt="Manejo com Drone Agrícola" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Abastecimento & Decolagem</h4>
+            <span>Agricultura de Precisão</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="escavadeira">
+          <img src="/images/20250728_160808.jpg" alt="Escavação de Açude" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Construção de Açude</h4>
+            <span>Reservatório Rural</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/20240316_101618.jpg" alt="Voo e pulverização em campo" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Voo Técnico Controlado</h4>
+            <span>Aplicação Localizada</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="escavadeira">
+          <img src="/images/20250728_160830.jpg" alt="Nivelamento de Terreno" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Nivelamento e Platô</h4>
+            <span>Infraestrutura Rural</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aerea">
+          <img src="/images/cobertura_evento_arena.jpg" alt="Cobertura Aérea de Evento" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Cobertura de Evento Rural</h4>
+            <span>Perspectiva Aérea</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="aerea">
+          <img src="/images/cobertura_evento_rodeio.jpg" alt="Imagens Aéreas de Rodeio" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Rodeio & Eventos</h4>
+            <span>Tomadas Cinematográficas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="depoimentos" style="background: #fff;">
+    <div class="container">
+      <div class="center-text">
+        <span class="section-tag">Depoimentos</span>
+        <h2 class="section-title">A Confiança de Quem Produz no Campo</h2>
+        <p class="section-desc">
+          O que dizem os produtores rurais e clientes que já comprovaram a qualidade e a pontualidade dos nossos serviços.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="test-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-text">
+            "A pulverização com drone da Agrodrones foi um divisor de águas na minha lavoura. Economia visível de calda, precisão cirúrgica na aplicação e sem amassar um único pé de soja."
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">JM</div>
+            <div>
+              <h5>João Martins</h5>
+              <span>Produtor Rural - Região de Codó</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-text">
+            "Contratamos o serviço de terraplanagem e abertura de valas. A máquina New Holland é muito forte e o operador fez o serviço no prazo exato do contrato. Nota 10!"
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">CS</div>
+            <div>
+              <h5>Carlos Silva</h5>
+              <span>Produtor e Pecuarista</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card">
+          <div class="test-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="test-text">
+            "A construção do açude em nossa propriedade superou todas as expectativas. Profissionais atenciosos, responsáveis e com maquinário impecável."
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">MF</div>
+            <div>
+              <h5>Maria Fernandes</h5>
+              <span>Fazenda São José</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Interactive Quote Section -->
+  <section class="section contact-section" id="contato">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card">
+          <span class="section-tag" style="color: var(--gold-primary);">Atendimento Direto</span>
+          <h3>Fale com Nossa Equipe</h3>
+          <p style="color: rgba(255,255,255,0.75); margin-bottom: 2rem;">
+            Estamos prontos para atender sua fazenda ou empreendimento com agilidade. Entre em contato pelos canais oficiais:
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-text">
+              <h4>WhatsApp Comercial 1</h4>
+              <p><a href="https://wa.me/5599981300824" target="_blank" rel="noopener noreferrer">+55 (99) 98130-0824</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="contact-text">
+              <h4>WhatsApp Comercial 2</h4>
+              <p><a href="https://wa.me/5599981228668" target="_blank" rel="noopener noreferrer">+55 (99) 98122-8668</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-text">
+              <h4>E-mail</h4>
+              <p><a href="mailto:jacdeoliveira@outlook.com.br">jacdeoliveira@outlook.com.br</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-text">
+              <h4>Endereço do Escritório</h4>
+              <p>Av. Dr. José Anselmo, 1542, São Benedito<br>Codó - Maranhão | CEP: 65.400-000</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-text">
+              <h4>Horário de Funcionamento</h4>
+              <p>Segunda a Sexta: 08h às 18h<br>Sábado: 08h às 12h</p>
+            </div>
+          </div>
+
+          <div class="contact-item" style="margin-bottom: 0;">
+            <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-text">
+              <h4>Siga no Instagram</h4>
+              <p><a href="https://instagram.com/agrodrones.ma" target="_blank" rel="noopener noreferrer">@agrodrones.ma</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote Form -->
+        <div class="form-card" id="orcamento">
+          <span class="section-tag">Orçamento Sem Compromisso</span>
+          <h3>Solicite um Orçamento</h3>
+          <p>Preencha os dados abaixo e receba um atendimento prioritário direto no seu WhatsApp.</p>
+
+          <form id="quoteForm">
+            <div class="form-group">
+              <label for="clientName">Seu Nome Completo *</label>
+              <input type="text" id="clientName" class="form-control" placeholder="Ex: José Carlos" required />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientPhone">WhatsApp / Telefone *</label>
+                <input type="tel" id="clientPhone" class="form-control" placeholder="(99) 99999-9999" required />
+              </div>
+              <div class="form-group">
+                <label for="clientService">Serviço Desejado *</label>
+                <select id="clientService" class="form-control" required>
+                  <option value="">Selecione...</option>
+                  <option value="drone">Pulverização com Drone DJI T40</option>
+                  <option value="escavadeira">Escavadeira Hidráulica / Terraplanagem</option>
+                  <option value="ambos">Drones + Terraplanagem</option>
+                  <option value="aereas">Imagens Aéreas & Topografia</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientArea">Tamanho da Área (Hectares) ou Detalhes da Obra</label>
+              <input type="text" id="clientArea" class="form-control" placeholder="Ex: 150 hectares / Construção de Açude" />
+            </div>
+
+            <div class="form-group">
+              <label for="clientMessage">Mensagem ou Observações</label>
+              <textarea id="clientMessage" class="form-control" rows="4" placeholder="Conte-nos sobre a localização da sua propriedade e o que você precisa..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; font-size: 1.05rem;">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Enviar Pedido para o WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="/images/logo_new.png" alt="Agrodrones" class="footer-logo" />
+          <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+            Soluções completas e inovadoras em Agricultura de Precisão e Terraplanagem no Maranhão.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--gold-light);">
+            CNPJ: 13.533.233/0001-00<br>
+            JAC DE OLIVEIRA
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre a Empresa</a></li>
+            <li><a href="#servicos">Nossos Serviços</a></li>
+            <li><a href="#galeria">Galeria de Trabalhos</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul class="footer-links">
+            <li><a href="#servicos">Pulverização com Drone T40</a></li>
+            <li><a href="#servicos">Aplicação de Adubos & Sólidos</a></li>
+            <li><a href="#servicos">Escavadeira Hidráulica E215C</a></li>
+            <li><a href="#servicos">Construção de Açudes</a></li>
+            <li><a href="#servicos">Terraplanagem e Nivelamento</a></li>
+            <li><a href="#servicos">Mapeamento Aéreo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contatos</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5599981300824" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> (99) 98130-0824</a></li>
+            <li><a href="https://wa.me/5599981228668" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> (99) 98122-8668</a></li>
+            <li><a href="mailto:jacdeoliveira@outlook.com.br"><i class="fa-solid fa-envelope"></i> jacdeoliveira@outlook.com.br</a></li>
+            <li><a href="https://instagram.com/agrodrones.ma" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> @agrodrones.ma</a></li>
+            <li style="margin-top: 8px; font-size: 0.85rem; color: rgba(255,255,255,0.6);">Codó - MA | Atuação em todo o estado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Agrodrones - Todos os direitos reservados.</p>
+        <p>Desenvolvido com tecnologia e alta performance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/5599981300824?text=Ol%C3%A1%21+Vim+pelo+site+da+Agrodrones+e+gostaria+de+um+or%C3%A7amento." 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     title="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Main JavaScript -->
+  <script src="/js/main.js"></script>
+</body>
 </html>
