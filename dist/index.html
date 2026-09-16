@@ -34,6 +34,7 @@
           <li><a href="#inicio">Início</a></li>
           <li><a href="#sobre">Sobre Nós</a></li>
           <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#calculadora">Simulador</a></li>
           <li><a href="#galeria">Projetos</a></li>
           <li><a href="#depoimentos">Depoimentos</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -59,16 +60,24 @@
 
   <!-- Hero Section -->
   <section class="hero-section" id="inicio">
-    <!-- Slide 1: DJI T40 -->
-    <div class="hero-slide active" style="background-image: url('/images/20240316_101322.jpg');">
+    <!-- Slide 1: Unidade Móvel / Reboque Técnico de Alta Performance -->
+    <div class="hero-slide active" style="background-image: url('/images/hero_reboque_tecnico.png');">
       <div class="hero-overlay"></div>
     </div>
-    <!-- Slide 2: Escavadeira New Holland -->
-    <div class="hero-slide" style="background-image: url('/images/20250728_160729.jpg');">
+    <!-- Slide 2: Drone DJI T40 em Plena Pulverização Aérea -->
+    <div class="hero-slide" style="background-image: url('/images/hero_drone_pulverizando.jpg');">
       <div class="hero-overlay"></div>
     </div>
-    <!-- Slide 3: Operação no Campo -->
-    <div class="hero-slide" style="background-image: url('/images/20240316_101525.jpg');">
+    <!-- Slide 3: Base de Operação DJI T40 no Campo -->
+    <div class="hero-slide" style="background-image: url('/images/hero_drone_base.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Slide 4: Escavadeira New Holland em Obra Pesada -->
+    <div class="hero-slide" style="background-image: url('/images/hero_escavadeira_obra.jpg');">
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Slide 5: Frota Hilux e Drone em Campo -->
+    <div class="hero-slide" style="background-image: url('/images/hero_drone_hilux.jpg');">
       <div class="hero-overlay"></div>
     </div>
 
@@ -137,12 +146,21 @@
   <section class="section" id="sobre">
     <div class="container">
       <div class="about-grid">
-        <div class="about-logo-card">
-          <img src="/images/logo_new.png" alt="Logotipo Oficial Agrodrones" class="about-logo-img" />
+        <div class="about-image-wrapper">
+          <div class="about-main-img-card">
+            <img src="/images/hero_reboque_tecnico.png" alt="Estrutura e Unidade Móvel Agrodrones" class="about-main-img" />
+            <div class="about-floating-badge">
+              <i class="fa-solid fa-award text-gold"></i>
+              <div>
+                <strong>Referência Regional</strong>
+                <span>Maranhão & Região</span>
+              </div>
+            </div>
+          </div>
           <div class="company-meta-pills">
             <div class="meta-pill"><i class="fa-solid fa-id-card"></i> CNPJ: 13.533.233/0001-00</div>
             <div class="meta-pill"><i class="fa-solid fa-user-tie"></i> JAC DE OLIVEIRA</div>
-            <div class="meta-pill"><i class="fa-solid fa-location-dot"></i> Codó - Maranhão</div>
+            <div class="meta-pill"><i class="fa-solid fa-location-dot"></i> Codó - MA</div>
           </div>
         </div>
 
@@ -154,6 +172,9 @@
           </p>
           <p>
             Com equipamentos de última geração — como os drones agrícolas <strong>DJI T40</strong> e escavadeiras hidráulicas <strong>New Holland E215C</strong> —, garantimos máxima rentabilidade na sua lavoura, zero amassamento da plantação, economia drástica de água e produtos, e execuções de terraplanagem com precisão milimétrica.
+          </p>
+          <p>
+            Contamos também com o suporte do sistema <strong>DroneGest</strong>, nossa plataforma integrada para gestão operacional, rastreabilidade de voos, controle de insumos e telemetria de campo, garantindo relatórios minuciosos e total transparência aos nossos clientes.
           </p>
 
           <div class="diff-cards-grid">
@@ -194,7 +215,7 @@
         <!-- Card 1: Drones Agrícolas -->
         <div class="service-card">
           <div class="service-img-wrap">
-            <img src="/images/20240316_101540.jpg" alt="Drone de Pulverização Agrícola DJI T40" />
+            <img src="/images/hero_drone_pulverizando.jpg" alt="Drone de Pulverização Agrícola DJI T40 em Ação" />
           </div>
           <div class="service-body">
             <h3>Drones Agrícolas de Pulverização</h3>
@@ -205,6 +226,7 @@
               <li>Dispersão de sementes e ressemeio de pastagens</li>
               <li>Nutrição foliar com máxima absorção</li>
               <li>Sem amassamento da cultura e sem compactação do solo</li>
+              <li>Gestão operacional e rastreabilidade com <strong>DroneGest</strong></li>
             </ul>
             <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
           </div>
@@ -213,7 +235,7 @@
         <!-- Card 2: Escavadeira Hidráulica -->
         <div class="service-card">
           <div class="service-img-wrap">
-            <img src="/images/20250728_160732.jpg" alt="Escavadeira Hidráulica New Holland E215C" />
+            <img src="/images/galeria_newholland_hilux.jpg" alt="Escavadeira Hidráulica New Holland E215C com Apoio Técnico" />
           </div>
           <div class="service-body">
             <h3>Escavadeira Hidráulica & Terraplanagem</h3>
@@ -310,27 +332,51 @@
           </div>
         </div>
 
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/galeria_equipe_drone.jpg" alt="Equipe Agrodrones com Drone DJI T40 em Voo" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Equipe Técnica Agrodrones</h4>
+            <span>Profissionais Certificados</span>
+          </div>
+        </div>
+
         <div class="gallery-item" data-category="escavadeira">
-          <img src="/images/20250728_160830.jpg" alt="Nivelamento de Terreno" loading="lazy" />
+          <img src="/images/galeria_escavadeira_acude.jpg" alt="Escavação de Açude e Terraplanagem com New Holland" loading="lazy" />
           <div class="gallery-item-overlay">
-            <h4>Nivelamento e Platô</h4>
-            <span>Infraestrutura Rural</span>
+            <h4>Construção de Açude & Corte</h4>
+            <span>New Holland E215C</span>
           </div>
         </div>
 
-        <div class="gallery-item" data-category="aerea">
-          <img src="/images/cobertura_evento_arena.jpg" alt="Cobertura Aérea de Evento" loading="lazy" />
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/galeria_drone_heliponto.jpg" alt="Drone DJI T40 no Ponto de Apoio" loading="lazy" />
           <div class="gallery-item-overlay">
-            <h4>Cobertura de Evento Rural</h4>
-            <span>Perspectiva Aérea</span>
+            <h4>Drone T40 & Unidade Móvel</h4>
+            <span>Logística no Campo</span>
           </div>
         </div>
 
-        <div class="gallery-item" data-category="aerea">
-          <img src="/images/cobertura_evento_rodeio.jpg" alt="Imagens Aéreas de Rodeio" loading="lazy" />
+        <div class="gallery-item" data-category="escavadeira">
+          <img src="/images/galeria_escavadeira_terraplanagem.jpg" alt="Abertura e Terraplanagem com Escavadeira New Holland" loading="lazy" />
           <div class="gallery-item-overlay">
-            <h4>Rodeio & Eventos</h4>
-            <span>Tomadas Cinematográficas</span>
+            <h4>Terraplanagem & Platô</h4>
+            <span>New Holland E215C</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="escavadeira">
+          <img src="/images/galeria_caminhao_prancha.jpg" alt="Transporte e Logística de Máquinas Pesadas" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Transporte Prancha Dedicado</h4>
+            <span>Agilidade em Todo o MA</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="drone">
+          <img src="/images/galeria_evento_stand.jpg" alt="Estande e Apresentação Agrodrones" loading="lazy" />
+          <div class="gallery-item-overlay">
+            <h4>Presença em Feiras & Eventos</h4>
+            <span>Tecnologia ao Produtor</span>
           </div>
         </div>
       </div>
@@ -412,6 +458,116 @@
     </div>
   </section>
 
+  <!-- Interactive Calculator / Simulator Section -->
+  <section class="section calculator-section" id="calculadora">
+    <div class="container">
+      <div class="center-text">
+        <span class="section-tag">Simulador Inteligente</span>
+        <h2 class="section-title">Calcule a Estimativa para sua Propriedade</h2>
+        <p class="section-desc">
+          Selecione o serviço e ajuste a área ou horas de trabalho para ver estimativas instantâneas de produtividade, tempo e benefícios.
+        </p>
+      </div>
+
+      <div class="calc-wrapper">
+        <!-- Controls Side -->
+        <div class="calc-controls">
+          <label class="calc-label">1. Selecione a Solução Desejada:</label>
+          <div class="calc-service-grid">
+            <button type="button" class="calc-service-btn active" data-service="pulverizacao">
+              <i class="fa-solid fa-helicopter"></i>
+              <span>Pulverização DJI T40</span>
+              <small>Hectares</small>
+            </button>
+            <button type="button" class="calc-service-btn" data-service="adubacao">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Dispersão de Sólidos / Adubo</span>
+              <small>Hectares</small>
+            </button>
+            <button type="button" class="calc-service-btn" data-service="escavadeira">
+              <i class="fa-solid fa-trowel-bricks"></i>
+              <span>Escavadeira / Terraplanagem</span>
+              <small>Horas de Máquina</small>
+            </button>
+            <button type="button" class="calc-service-btn" data-service="mapeamento">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Mapeamento & Topografia</span>
+              <small>Hectares</small>
+            </button>
+          </div>
+
+          <div class="calc-range-group">
+            <div class="range-header">
+              <span id="rangeLabel">Tamanho da Área a Manejar:</span>
+              <div class="range-val-badge">
+                <input type="number" id="calcNumberInput" value="100" min="10" max="2500" />
+                <span id="rangeUnit">ha</span>
+              </div>
+            </div>
+            <input type="range" id="calcSlider" min="10" max="1000" step="5" value="100" class="custom-range" />
+            <div class="range-scale">
+              <span id="scaleMin">10 ha</span>
+              <span id="scaleMid">500 ha</span>
+              <span id="scaleMax">1.000+ ha</span>
+            </div>
+          </div>
+
+          <div class="calc-extra-info">
+            <div class="form-group" style="margin-bottom: 0;">
+              <label for="calcCropType" style="font-size: 0.85rem; color: rgba(255,255,255,0.85);">Tipo de Cultura ou Aplicação:</label>
+              <select id="calcCropType" class="form-control" style="background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(212,175,55,0.3);">
+                <option value="Pastagem / Pecuária" style="color: #000;">Pastagem / Pecuária</option>
+                <option value="Soja / Milho" style="color: #000;">Soja / Milho</option>
+                <option value="Arroz / Grãos Diversos" style="color: #000;">Arroz / Outros Grãos</option>
+                <option value="Abertura de Açude / Represa" style="color: #000;">Construção / Limpeza de Açude</option>
+                <option value="Desmate / Limpeza de Pasto" style="color: #000;">Limpeza de Pasto / Destoca</option>
+                <option value="Outro / Mapeamento Rural" style="color: #000;">Outro / Mapeamento Geral</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary & Action Side -->
+        <div class="calc-results-card">
+          <div class="results-header">
+            <span class="badge-tag"><i class="fa-solid fa-chart-line"></i> Estimativa Dinâmica</span>
+            <h3 id="resServiceTitle">Pulverização com Drone DJI T40</h3>
+          </div>
+
+          <div class="results-grid">
+            <div class="result-metric">
+              <span class="metric-label">Tempo Médio Estimado:</span>
+              <span class="metric-value text-gold" id="resTempo">~1 a 2 Dias</span>
+              <small id="resRendimento">Rendimento de até 100-150 ha/dia</small>
+            </div>
+
+            <div class="result-metric">
+              <span class="metric-label">Economia & Rendimento:</span>
+              <span class="metric-value" style="color: #55e694;" id="resBeneficio">0% Amassamento</span>
+              <small id="resBeneficioSub">Zero perda de plantas e solo preservado</small>
+            </div>
+
+            <div class="result-metric highlight-metric">
+              <span class="metric-label">Investimento Estimado:</span>
+              <span class="metric-price" id="resPreco">Sob Consulta Personalizada</span>
+              <small>Preço por hectare/hora reduzido para áreas maiores</small>
+            </div>
+          </div>
+
+          <div class="calc-tech-note">
+            <i class="fa-solid fa-circle-check text-gold"></i>
+            <span>Operações com telemetria via <strong>DroneGest</strong>, conformidade <strong>ANAC/MAPA</strong> e seguro RETA.</span>
+          </div>
+
+          <button type="button" class="btn-primary calc-send-btn" id="btnSendCalcWhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Enviar Simulação para WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact & Interactive Quote Section -->
   <section class="section contact-section" id="contato">
     <div class="container">
@@ -452,7 +608,12 @@
             <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div class="contact-text">
               <h4>Endereço do Escritório</h4>
-              <p>Av. Dr. José Anselmo, 1542, São Benedito<br>Codó - Maranhão | CEP: 65.400-000</p>
+              <p>
+                <a href="https://maps.app.goo.gl/yW8a74qmHxCLQNSK6" target="_blank" rel="noopener noreferrer" style="color: rgba(255,255,255,0.85); text-decoration: underline dotted;">
+                  Av. Dr. José Anselmo, 1542, São Benedito<br>Codó - Maranhão | CEP: 65.400-000
+                  <br><span style="color: var(--gold-primary); font-size: 0.85rem; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px;"><i class="fa-solid fa-map-location-dot"></i> Abrir no Google Maps</span>
+                </a>
+              </p>
             </div>
           </div>
 
@@ -543,6 +704,7 @@
             <li><a href="#inicio">Início</a></li>
             <li><a href="#sobre">Sobre a Empresa</a></li>
             <li><a href="#servicos">Nossos Serviços</a></li>
+            <li><a href="#calculadora">Simulador de Orçamento</a></li>
             <li><a href="#galeria">Galeria de Trabalhos</a></li>
             <li><a href="#depoimentos">Depoimentos</a></li>
             <li><a href="#contato">Fale Conosco</a></li>
@@ -568,7 +730,7 @@
             <li><a href="https://wa.me/5599981228668" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> (99) 98122-8668</a></li>
             <li><a href="mailto:jacdeoliveira@outlook.com.br"><i class="fa-solid fa-envelope"></i> jacdeoliveira@outlook.com.br</a></li>
             <li><a href="https://instagram.com/agrodrones.ma" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i> @agrodrones.ma</a></li>
-            <li style="margin-top: 8px; font-size: 0.85rem; color: rgba(255,255,255,0.6);">Codó - MA | Atuação em todo o estado</li>
+            <li><a href="https://maps.app.goo.gl/yW8a74qmHxCLQNSK6" target="_blank" rel="noopener noreferrer" style="margin-top: 8px; font-size: 0.85rem; color: var(--gold-light); display: inline-flex; align-items: center; gap: 6px;"><i class="fa-solid fa-location-dot"></i> Codó - MA (Ver no Google Maps)</a></li>
           </ul>
         </div>
       </div>
