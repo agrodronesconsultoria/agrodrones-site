@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `📐 *Área:* ${encodeURIComponent(area || "Não informado")} hectares%0A` +
         `💬 *Detalhes:* ${encodeURIComponent(msg || "Gostaria de mais informações.")}`;
 
-      const whatsappUrl = `https://wa.me/5599981300824?text=${text}`;
+      const whatsappUrl = `https://wa.me/5599981228668?text=${text}`;
       window.open(whatsappUrl, '_blank');
     });
   }
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', () => {
           `✨ *Destaque:* ${encodeURIComponent(benef)}%0A` +
           `%0A*Gostaria de receber a cotação formal e confirmar disponibilidade na minha região.*`;
 
-        const whatsappUrl = `https://wa.me/5599981300824?text=${msgText}`;
+        const whatsappUrl = `https://wa.me/5599981228668?text=${msgText}`;
         window.open(whatsappUrl, '_blank');
       });
     }
