@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const serviceConfigs = {
     pulverizacao: {
-      title: 'Pulverização com Drone DJI T40',
+      title: 'Pulverização Aérea com Drone',
       label: 'Tamanho da Área a Pulverizar:',
       unit: 'ha',
       min: 10,
@@ -158,15 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const dias = Math.max(1, Math.ceil(val / 120));
         return {
           tempo: dias === 1 ? '~1 Dia útil' : `~${dias} a ${dias + 1} Dias`,
-          rendimento: 'Rendimento de até 100 a 140 ha/dia',
+          rendimento: 'Rendimento de alto padrão por dia',
           beneficio: '0% Amassamento',
-          beneficioSub: 'Economia de 30% a 90% de água e sem perdas de plantas',
+          beneficioSub: 'Economia substancial de água e defensivos sem perda de plantas',
           preco: val >= 300 ? 'Condição Especial para Grande Área' : 'Orçamento Rápido por Hectare'
         };
       }
     },
     adubacao: {
-      title: 'Dispersão de Sólidos, Adubo & Sementes',
+      title: 'Dispersão de Sólidos & Sementes',
       label: 'Área para Adubação / Semeadura:',
       unit: 'ha',
       min: 10,
@@ -179,15 +179,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const dias = Math.max(1, Math.ceil(val / 90));
         return {
           tempo: dias === 1 ? '~1 Dia' : `~${dias} a ${dias + 1} Dias`,
-          rendimento: 'Distribuição homogênea de até 50kg/min',
+          rendimento: 'Distribuição homogênea com vazão dosada',
           beneficio: 'Distribuição Uniforme',
-          beneficioSub: 'Sem desperdício de insumos e com taxa variável',
+          beneficioSub: 'Sem desperdício de insumos com aplicação localizada',
           preco: 'Excelente Custo x Benefício / ha'
         };
       }
     },
     escavadeira: {
-      title: 'Escavadeira Hidráulica New Holland E215C',
+      title: 'Escavadeira Hidráulica & Terraplanagem',
       label: 'Estimativa de Horas de Trabalho:',
       unit: 'hrs',
       min: 10,
@@ -200,9 +200,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const dias = Math.max(1, Math.ceil(val / 9));
         return {
           tempo: dias === 1 ? '~1 a 2 Dias de Operação' : `~${dias} Dias úteis (${val}h de máquina)`,
-          rendimento: 'Máquina New Holland 21 Toneladas com operador experiente',
+          rendimento: 'Maquinário pesado de grande porte com operador experiente',
           beneficio: 'Alta Produtividade',
-          beneficioSub: 'Abertura rápida de açudes, valas e nivelamento robusto',
+          beneficioSub: 'Abertura técnica de açudes, drenagem e nivelamento robusto',
           preco: 'Diária ou Hora de Máquina Fechada'
         };
       }
